@@ -1,0 +1,49 @@
+{
+  "name": "bots-integration",
+  "version": "1.0.0",
+  "description": "Bot pushing Rally`s User Stories changes",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "DEBUG=rally-bot:* nodemon src/index.js --exec babel-node",
+    "build": "babel src -d dist --source-maps inline",
+    "serve": "node dist/index.js",
+    "test": "jest --colors",
+    "postinstall": "npm run build"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jest": "^22.1.1",
+    "nock": "^9.1.6"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "botkit": "^0.6.7",
+    "debug": "^3.1.0",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "nodemon": "^1.14.11",
+    "rally": "^2.1.2",
+    "telegraf": "^3.17.5",
+    "text-table": "^0.2.0"
+  }
+}

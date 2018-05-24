@@ -1,0 +1,21 @@
+{
+  "rally": {
+    "url": {
+      "protocol": "https",
+      "host": "localhost"
+    },
+    "name": "Slack bot for US",
+    "attributes": ["Name", "Description", "Parent", "ScheduleState", "Defects", "Owner", "DisplayColor", "PlanEstimate", "Tags", "Children", "Tasks", "Predecessors"]
+  },
+
+  "bot": {
+    "type": "slack",
+    "url": {
+      "protocol": "https",
+      "host": "a9.ngrok.io",
+      "listenRoute": "/user-story",
+      "port": 3000
+    },
+    "channel": "general"
+  }
+}
